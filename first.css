@@ -10,7 +10,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    /* background-color: #000000; */
+    background-image: url(https://i.postimg.cc/FzbQhkqW/HANGMAN.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
@@ -23,6 +26,7 @@ body{
     flex-direction: column;
     border-radius: 25px;
     color: #F6F1F1;
+    z-index: 999;
 }
 
 .container h4{
@@ -49,3 +53,11 @@ body{
     opacity: 0.8;
     color: black;
 }
+
+@media (max-width: 790px) {
+    body{
+        background-image: none;
+        background-color: black;
+    }
+}
+
